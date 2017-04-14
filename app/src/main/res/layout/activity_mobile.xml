@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.starschina.connect.demo.MobileActivity">
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="开启广播"/>
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/start"
+        android:text="投屏"/>
+
+    <Button
+        android:id="@+id/sysn_history"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/disconnect"
+        android:text="同步"/>
+
+    <Button
+        android:id="@+id/disconnect"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="离开"/>
+
+    <Button
+        android:id="@+id/forward"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play"
+        android:text="快进"/>
+
+    <Button
+        android:id="@+id/backward"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play"
+        android:layout_toRightOf="@id/forward"
+        android:text="快退"/>
+
+    <Button
+        android:id="@+id/volumeIncrease"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play"
+        android:layout_alignParentRight="true"
+        android:text="音量加"/>
+
+    <Button
+        android:id="@+id/volumeDecrease"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play"
+        android:layout_toLeftOf="@id/volumeIncrease"
+        android:text="音量减"/>
+
+    <TextView
+        android:id="@+id/showMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_below="@+id/forward"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="#e3e3e3"
+        android:text="正在搜索...\n"/>
+
+</RelativeLayout>
